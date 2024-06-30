@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My App</title>
+    <link rel="stylesheet" href="./sign_up.css">
+</head>
+<body>
+    <div class="container">
+        <div id="auth_container">
+            <div class="auth-form" id="signin_div">
+                <h3>Create an Account</h3>
+                <input type="email" id="signup_email" placeholder="Enter your Email">
+                <input type="password" id="signup_password" placeholder="Enter your Password">
+                <button id="signup_btn">Sign Up</button>
+            </div>
+            <div class="auth-form" id="login_div">
+                <h3>Login to Your Account</h3>
+                <input type="email" id="login_email" placeholder="Enter your Email">
+                <input type="password" id="login_password" placeholder="Enter your Password">
+                <button id="login_btn">Login</button>
+            </div>
+        </div>
+        <div id="user_container" class="hidden">
+            <h1 id="user_email"></h1>
+            <button id="logout">Log Out</button>
+        </div>
+    </div>
+
+    <script src="./script.js" type="module"></script>
+</body>
+</html>
+
