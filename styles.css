@@ -1,121 +1,124 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #654ea3;
+  background: -webkit-linear-gradient(to right, #eaafc8, #654ea3);
+  background: linear-gradient(to right, #eaafc8, #654ea3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
 
+.container {
+  max-width: 400px;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
 
-      body {
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        background-color: #654ea3;  /* fallback for old browsers */
-        background: -webkit-linear-gradient(to right, #eaafc8, #654ea3);  /* Chrome 10-25, Safari 5.1-6 */
-        background: linear-gradient(to right, #eaafc8, #654ea3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-        ;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-        margin: 0;
-    }
-    
-    .container {
-        max-width: 400px;
-        width: 100%;
-        padding: 20px;
-        box-sizing: border-box;
-    }
-    
-    .auth-form {
-        background-color: #ADA996;  /* fallback for old browsers */
-        background: -webkit-linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996);  /* Chrome 10-25, Safari 5.1-6 */
-        background: linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-        ;
-        padding: 20px;
-        border-radius: 8px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        margin-bottom: 20px;
-    }
-    
-    .auth-form h3 {
-        margin-top: 0;
-        text-align: center;
-        color: #333333;
-    }
-    
-    .auth-form input[type="email"],
-    .auth-form input[type="password"] {
-        width: 100%;
-        padding: 12px;
-        margin-top: 10px;
-        margin-bottom: 20px;
-        border: 1px solid #ccc;
-        border-radius: 5px;
-        font-size: 16px;
-    }
-    
-    .auth-form button {
-        width: 100%;
-        padding: 12px;
-        background-color: #000000;
-        color: #ffffff;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-        font-size: 16px;
-        transition: background-color 0.3s ease;
-    }
-    
-    .auth-form button:hover {
-        background-color:white;
-        color:black;
-        font-weight: bolder;
-        font-size: larger;
-    }
-    
-    #user_container {
-        display: none;
-        background-color: #ffffff;
-        padding: 20px;
-        border-radius: 8px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    }
-    
-    #user_container h1 {
-        margin-top: 0;
-        text-align: center;
-        color: #333333;
-    }
-    
-    #logout {
-        display: block;
-        margin: 20px auto 0;
-        padding: 12px 20px;
-        background-color: #f44336;
-        color: #ffffff;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-        font-size: 16px;
-        transition: background-color 0.3s ease;
-    }
-    
-    #logout:hover {
-        background-color: #d32f2f;
-    }
-    
-    .hidden {
-        display: none;
-    }
-    
-    @media (max-width: 400px) {
-        .auth-form input[type="email"],
-        .auth-form input[type="password"],
-        .auth-form button {
-            font-size: 14px;
-        }
-    }
-    
-    .auth-form input[type="email"], .auth-form input[type="password"] {
-        width: 94%;
-        padding: 12px;
-        margin-top: 10px;
-        margin-bottom: 20px;
-        border: 1px solid #ccc;
-        border-radius: 5px;
-        font-size: 16px;
-    }
+.auth-form {
+  background-color: #ada996;
+  background: -webkit-linear-gradient(
+    to right,
+    #eaeaea,
+    #dbdbdb,
+    #f2f2f2,
+    #ada996
+  );
+  background: linear-gradient(to right, #eaeaea, #dbdbdb, #f2f2f2, #ada996);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.auth-form h3 {
+  margin-top: 0;
+  text-align: center;
+  color: #333333;
+}
+
+.auth-form input[type="email"],
+.auth-form input[type="password"] {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.auth-form button {
+  width: 100%;
+  padding: 12px;
+  background-color: #000000;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.auth-form button:hover {
+  background-color: white;
+  color: black;
+  font-weight: bolder;
+  font-size: larger;
+}
+
+#user_container {
+  display: none;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#user_container h1 {
+  margin-top: 0;
+  text-align: center;
+  color: #333333;
+}
+
+#logout {
+  display: block;
+  margin: 20px auto 0;
+  padding: 12px 20px;
+  background-color: #f44336;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+#logout:hover {
+  background-color: #d32f2f;
+}
+
+.hidden {
+  display: none;
+}
+
+@media (max-width: 400px) {
+  .auth-form input[type="email"],
+  .auth-form input[type="password"],
+  .auth-form button {
+    font-size: 14px;
+  }
+}
+
+.auth-form input[type="email"],
+.auth-form input[type="password"] {
+  width: 94%;
+  padding: 12px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
